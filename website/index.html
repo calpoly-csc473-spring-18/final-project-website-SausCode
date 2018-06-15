@@ -1,0 +1,266 @@
+<html>
+<head>
+  <title>Webpage Title</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: white;
+      color: #333333;
+      -webkit-font-smoothing: antialiased;
+      font-size: 16px;
+      font-family: "Source Sans Pro", Helvetica;
+    }
+
+    img {
+      display: block;
+    }
+
+    em {
+      font-size: 12px;
+    }
+
+    #signature {
+      margin-left: 30px;
+      font-style: oblique;
+    }
+
+    a:link,
+    a:visited {
+      color: #165788;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: underline;
+    }
+
+    .wrapper {
+      width: 660px;
+      margin: auto;
+    }
+
+    .container {
+      width: 660px;
+      margin: auto;
+    }
+
+    #content {
+      width: 650px;
+      margin: 70px auto 0px auto;
+    }
+
+    #content article {
+      margin-bottom: 150px;
+    }
+
+    #content h1,
+    #content h2 {
+      color: black;
+      margin-bottom: 30px;
+      font-weight: 200;
+      font-size: 48px;
+    }
+
+    #content h3 {
+      color: black;
+      border-bottom: 1px solid black;
+      text-transform: uppercase;
+      margin: 30px 0px 30px 0px;
+      font-size: 28px;
+      font-weight: 200;
+    }
+
+    #content p {
+      width: 100%;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+
+    #content p:first-child {
+      font-size: 18px;
+      font-style: italic;
+      letter-spacing: 2px;
+    }
+
+    #content p:first-child:first-line {
+        font-weight: bold;
+    }
+  
+    #content ul {
+        padding-left:25px
+    }
+
+    pre {
+      font-size: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body><div class="wrapper"><section id="content">
+
+<h1>CSC 473 Final Project</h1>
+
+<h4>John Cunningham - CSC 473 - Spring 2018 - Ian Dunn</h4>
+
+<article> <!-- This adds padding at the top and bottom -->
+
+
+
+
+<h3>Project Description</h3>
+
+<p>For my final project I wanted to implement soft shadows, and to try out some noise generations on some simple scenes.</p>
+    
+<p>Noise Functions Used:
+  <ul>
+    <li>Perlin Noise</li>
+    <li>Simplex Rigid Noise</li>
+    <li>Warped Curl of Simplex Noise</li>
+    <li>1-D Simplex Noise Fractal Brownian Motion Sum with Analytical Derivatives</li>
+    <li>1-D Simplex Ridged Multi-Fractal Noise Sum</li>
+  </ul>
+</p>
+    
+<h3>Soft Shadow Demos</h3>
+<ul>
+    <figure>  
+        <video width="640" height="480" controls loop>    
+          <source src="videos/soft_shadows_balls_0.mp4" type="video/mp4">  
+        </video>
+        <figcaption>Soft Shadows pt_1</figcaption>
+    </figure> 
+
+    <figure>      
+        <video width="640" height="480" controls loop>    
+          <source src="videos/soft_shadows_skateboarder_0.mp4" type="video/mp4">  
+        </video>
+        <figcaption>Soft Shadows pt_2</figcaption>
+    </figure> 
+
+<figure>
+    <video width="640" height="480" controls loop>
+      <source src="videos/grid30fps.mp4" type="video/mp4">
+    </video>
+    <figcaption>PBR Grid 30fps</figcaption>
+</figure> 
+    
+<figure>
+    <video width="640" height="480" controls loop>
+      <source src="videos/grid60fps.mp4" type="video/mp4">
+    </video>
+    <figcaption>PBR Grid 60fps</figcaption>
+</figure>         
+    
+<figure>
+    <video width="640" height="480" controls loop>
+      <source src="videos/triforce30fps.mp4" type="video/mp4">
+    </video>
+    <figcaption>Triforce 30fps</figcaption>
+</figure> 
+    
+<figure>
+    <video width="640" height="480" controls loop>
+      <source src="videos/triforce60fps.mp4" type="video/mp4">
+    </video>
+    <figcaption>Triforce 60fps</figcaption>
+</figure>     
+    
+</ul>      
+    
+<h3>Noise Demos</h3>
+<ul>
+
+<figure>
+    <video width="640" height="480" controls loop>
+      <source src="videos/color_change_0.mp4" type="video/mp4">
+    </video>
+    <figcaption>Perlin Noise Color Change</figcaption>
+</figure>    
+
+<figure>
+    <video width="640" height="480" controls loop>
+      <source src="videos/marble_0.mp4" type="video/mp4">
+    </video>
+    <figcaption>Simplex Noise By Axis (I think they look like marbles)</figcaption>
+</figure> 
+   
+<figure>    
+    <video width="640" height="480" controls loop>    
+      <source src="videos/rmf_0.mp4" type="video/mp4">    
+    </video>
+    <figcaption>Ridged Multi-Fractal</figcaption>
+</figure> 
+ 
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/simplex_brownian_0.mp4" type="video/mp4">  
+    </video>
+    <figcaption>1-D Simplex Noise Fractal Brownian Motion Sum with Analytical Derivatives</figcaption>
+</figure>  
+
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/warped_curl_0.mp4" type="video/mp4">  
+    </video>
+    <figcaption>Warped Curl of Simplex Noise pt_1</figcaption>
+</figure> 
+
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/warped_curl_1.mp4" type="video/mp4">   
+    </video>
+    <figcaption>Warped Curl of Simplex Noise pt_2</figcaption>
+</figure> 
+
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/warped_curl_3.mp4" type="video/mp4"> 
+    </video>
+    <figcaption>Warped Curl of Simplex Noise 30fps</figcaption>
+</figure>      
+
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/warped_curl_4.mp4" type="video/mp4">  
+    </video>
+    <figcaption>Warped Curl of Simplex Noise 60 fps</figcaption>
+</figure> 
+
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/white_noise_0.mkv" type="video/mp4"> 
+    </video>
+    <figcaption>White Noise pt_1</figcaption>
+</figure> 
+
+<figure>      
+    <video width="640" height="480" controls loop>    
+      <source src="videos/white_noise_1.mkv" type="video/mp4"> 
+    </video>
+    <figcaption>White Noise pt_2</figcaption>
+</figure>     
+    
+</ul>    
+   
+
+<h3>Resources</h3>
+<ul>
+  <li><a href="https://github.com/simongeilfus/SimplexNoise">Github for Noise</a></li>
+  <li><a href="https://github.com/Reputeless/PerlinNoise">Github for Perlin Noise and White Noise</a></li>
+  <li><a href="https://www.cs.unc.edu/~dm/UNC/COMP236/LECTURES/SoftShadows.pdf">PDF that somewhat describes ways to do soft shadows</a></li>
+ </ul>
+
+
+</article></section></div></body></html>
